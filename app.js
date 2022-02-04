@@ -9,7 +9,7 @@ const session=require("express-session");
 const helmet = require('helmet');
 const SHA256 = require("crypto-js/sha256");
 const MongoStore = require('connect-mongo');
-
+let hbs=require("express-handlebars");
 
 /* ================ UTILS file  STARTS  =================*/
 
@@ -52,8 +52,20 @@ app.use(session(sessionSettings));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(helmet());
+app.engine('hbs', 
+    hbs.engine({ 
+        extname: 'hbs',
+        defaultLayout:'layout',
+        layoutsDir: __dirname + '/views/layouts/' , 
+        partialsDir  : [
+            path.join(__dirname, 'views/components'),
+        ]
+    })
+);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
 
 /* ================ Configuring body and Cookie Parser END  =================*/
 
@@ -62,9 +74,9 @@ app.use(helmet());
 /* ========================= ROUTES START ==============================*/
 
 
-app.use("/",index)        // INDEX ROUTES
-app.use("/users",users);  // USERS ROUTES
-app.use("/products",products) // PRODUCTS ROUTES
+app.use("/",index)              // INDEX ROUTES
+app.use("/users",users);        // USERS ROUTES
+app.use("/products",products)   // PRODUCTS ROUTES
 
 /* ========================= ROUTES END ==============================*/
 

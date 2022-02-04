@@ -21,6 +21,7 @@
     "csurf": "^1.11.0",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "express-validator": "^6.14.0",
     "helmet": "^5.0.2",

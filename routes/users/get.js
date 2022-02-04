@@ -24,10 +24,6 @@ const userAccount=require("../../models/userAccount");
 const auth=require("../../core/users/usersAuth");
 
 
-router.get('/', async (req, res, next) => {
-    res.sendStatus(HTTPStatusCode.FORBIDDEN);
-});
-
 router.get("/:userId",auth.userAuth.isLoggedIn,async(req,res)=>{
     let responseCode,responseMessage,responseData;
     let userId=req.params.userId;

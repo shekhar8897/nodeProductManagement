@@ -1,0 +1,90 @@
+:root{
+    --primary-colorWithOpacity:#f1f5fa;
+    --secondary-color:#757D85;
+    --warning-color:#FFC107;
+    --danger-color:#DC3545;
+    --danger-colorWithOpacity:#fdf2f3;
+    --info-color:#17A2B8;
+    --muted-color:#6C757D;
+    --success-color:#28A745;
+    --text-color-purity:#fff;
+    --text-color-dark:#000;
+    --background-color-light:#fff;
+    --background-color-dark:#000;
+    --background-color-ebony:#5C5B5B;
+    --background-color-metal:#969696;
+    --background-color-jade:#313131;
+    --background-color-raven:#050301;
+    --background-color-leather:#0B0705;
+    --background-color-pulp:#F7EDC9;
+    --color-darkTeal:#005459;
+    --color-lavender:rgb(5, 98, 160);
+    --color-lavenderWithOpacity:#be87f1;
+    --color-tableColor:rgb(5, 98, 160);
+    --color-TealWithOpacity:#F5FCF9;
+    --color-champagne:#EEE3D0;
+    --fontsize-strong:40px;
+    --fontsize-tough:32px;
+    --fontsize-pearl:28px;
+    --fontsize-trim:24px;
+    --fontsize-glossy:20px;
+    --fontsize-brittle:16px;
+}
+
+*{
+    word-wrap: break-word;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.logout_button{
+    outline: none;
+    border: none;
+    padding: 3% 8%;
+    border-radius: 1rem;
+    color: var(--);
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgb(7, 228, 125), rgb(5, 98, 160));
+}
+.home{
+    background: -webkit-linear-gradient(rgb(7, 228, 125), rgb(5, 98, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+input{
+    background-color: var(--color-TealWithOpacity);
+    color: var(--background-color-dark);
+    width: 70%;
+    color: var(--color-lavender);
+    margin:.1rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:.9rem ;
+    padding-bottom: .9rem;   
+    outline:none;
+    border:none;
+    font-size: var(--fontsize-brittle);
+    border-radius:5rem;
+}
+
+input:focus{
+    outline: 1px solid var(--color-lavenderWithOpacity);
+    background-color: var(--color-white);
+    
+}
