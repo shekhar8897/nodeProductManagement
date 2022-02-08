@@ -1,0 +1,24 @@
+.buttonBlock{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding: 2% 0;
+}
+.button{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:.9rem ;
+    padding-bottom: .9rem;   
+    outline:none;
+    border:none;
+    background-color: var(--color-lavender);
+    color:var(--text-color-purity);
+    font-size: var(--fontsize-brittle);
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius:5rem;
+    cursor: pointer;
+}

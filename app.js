@@ -9,7 +9,8 @@ const session=require("express-session");
 const helmet = require('helmet');
 const SHA256 = require("crypto-js/sha256");
 const MongoStore = require('connect-mongo');
-let hbs=require("express-handlebars");
+const hbs=require("express-handlebars");
+const cors = require('cors');
 
 /* ================ UTILS file  STARTS  =================*/
 
@@ -48,13 +49,15 @@ app.use(session(sessionSettings));
 
 
 /* ================ Configuring body and Cookie Parser STARTS  =================*/
-
+app.use(cors());
+app.options('*', cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(helmet());
-app.engine('hbs', 
+
+/* app.engine('hbs', 
     hbs.engine({ 
         extname: 'hbs',
         defaultLayout:'layout',
@@ -66,7 +69,7 @@ app.engine('hbs',
 );
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-
+ */
 /* ================ Configuring body and Cookie Parser END  =================*/
 
 

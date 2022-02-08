@@ -87,11 +87,13 @@ const dbUtils={
     },
     getProductByProductId:async function(productId){
         try {
+            console.log('--get====',productId)
             let dbResponse=await product.find({
                 $or:[
                     {"_id":productId}
                 ]
             }).exec()
+            console.log("dsad",dbResponse)
             return dbResponse;
         } catch (error) {
             return {msg:error,status:"NOT_FOUND"}

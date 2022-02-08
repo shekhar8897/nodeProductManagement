@@ -47,9 +47,10 @@ router.post("/login",[
                     responseCode=HTTPStatusCode.OK;
                     responseMessage=HTTPStatusCode.OK;
                     responseData=dbResponse
+                    
                 }else{
-                    responseCode=HTTPStatusCode.FORBIDDEN;
-                    responseMessage=HTTPStatusCode.FORBIDDEN;
+                    responseCode=HTTPStatusCode.NOT_FOUND;
+                    responseMessage=HTTPStatusCode.NOT_FOUND;
                     responseData="PASSWORD DOESN'T MATCH."
                 }
             }else{
@@ -62,7 +63,8 @@ router.post("/login",[
         responseCode = HTTPStatusCode.INTERNAL_SERVER_ERROR
         responseMessage = HTTPStatusCode.INTERNAL_SERVER_ERROR;
         responseData = error.toString();
-    }finally{
+    }
+    finally{
         return res.status(responseCode ).send({message:responseMessage,data:responseData})
     }
     

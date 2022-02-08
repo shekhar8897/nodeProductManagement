@@ -1,0 +1,121 @@
+.productContainer{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 35%;
+    margin-top: 7%;
+    border-radius: .5rem;
+    box-shadow: 0px 1px 10px rgb(5, 98, 160,0.3);
+    
+}
+.signupHeader{
+    padding: 5%;
+    text-align: center;
+    background:-webkit-linear-gradient(rgb(7, 228, 125), rgb(5, 98, 160));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.signup_block{
+  
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.signupBody{
+    
+    margin-top: 7%;
+    padding-bottom: 10%;
+}
+table {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+.filter_table{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-input{
+    width: 100% !important;
+    background-color: var(--color-TealWithOpacity) !important;
+}
+thead {
+    color: rgb(16, 42, 190, 0.8) !important;
+    text-transform: uppercase;
+    position: sticky !important;
+}
+
+td,
+th {
+    text-align: center !important;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-tableColor);
+}
+tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-group {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: rgb(16, 42, 190);
+    background-color: white;
+    outline: none;
+    border-radius: 0.85em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+select {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: rgb(16, 42, 190);
+    outline: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+.card {
+    padding: 1%;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.buttonTD{
+    display: flex;
+    justify-content: space-around;
+}
+
+.save {
+    outline: none;
+    background: none;
+    border: none;
+    display: none;
+    background: #9a32ad;
+    color: #ffffff;
+}
+

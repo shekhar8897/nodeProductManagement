@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="components/navbar/navbar.css"/>
+    <link rel="stylesheet" href="./components/inputfield/inputfield.css"/>
+    <link rel="stylesheet" href="./screens/products/product.css"/>
+    
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="contact_manager_navbar"></div>
+    <div class="product_manager_data"></div>
+</body>
+
+    <script>
+        /**
+         * restrict Product url from access
+        */
+        $(document).ready(function(){
+            if(!_isNull(localStorage.getItem("USER"))){
+                window.location.replace('/index.html')
+            }
+        })
+    </script>
+
+    <script src="./utils/utils.js"></script>
+    <script src="./models/navbar.model.js"></script>
+    <script src="./models/user.model.js"></script>
+    <script src="./models/product.model.js"></script>
+    <script src="./constants/application.js"></script>
+    <script src="./components/navbar/navbar.js"></script>
+    <script src="./components/inputfield/inputfield.js"></script>
+    <script src="./components/button/button.js"></script>
+    <script src="./screens/products/product.js"></script>
+    <script src="./utils/tableUtils.js"></script>
+    <script src="./apis/product.api.js"></script>
+    
+</html>

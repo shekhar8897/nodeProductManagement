@@ -4,13 +4,13 @@
     width: 25%;
     margin-top: 7%;
     border-radius: .5rem;
-    box-shadow: 0px 1px 10px rgb(158, 95, 241,0.3);
+    box-shadow: 0px 1px 10px rgb(5, 98, 160,0.3);
     
 }
 .loginHeader{
     padding: 5%;
     text-align: center;
-    background: -webkit-linear-gradient(rgb(186, 53, 248), rgb(228, 66, 174));
+    background:-webkit-linear-gradient(rgb(7, 228, 125), rgb(5, 98, 160));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -39,7 +39,7 @@ router.put("/:productId",[
     const userId=res.locals.user.userId;
     const productId=req.params.productId;
     try {
-        const productDetails=await DB.dbUtils.getProductByProductId(productId);  //GET PRODUCTS DETAILS
+        const productDetails=await DB.dbUtils.getProductByProductId(productId);         //GET PRODUCTS DETAILS
         if(userId!==productDetails[0].userId.toString()){
             responseCode=HTTPStatusCode.FORBIDDEN;
             responseData="USER NOT AUTHENTICATED.";
