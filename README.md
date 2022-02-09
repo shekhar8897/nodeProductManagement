@@ -13,7 +13,7 @@
 
     STEP-2: ** Go to Frontend folder 
     STEP-3: ** Open index.html
-    STEP-4: ** Run index.html through LIVE-SERVER [ present at bottom right  cornet in VScode ]
+    STEP-4: ** Run index.html through LIVE-SERVER [ present at bottom right corner in VScode ]
 
 #### # APIs
     ----------------- USER ONBOARDING -------------------
